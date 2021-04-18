@@ -1,9 +1,9 @@
 # TeamProject_AI_Food_Recommendation_System
 
-2020년도 대학교에서 수강한 산합혁력 프로젝트에서 진행된 프로젝트입니다. 멘토분은 Microsoft 본사에서 데이터사이언티스트로 근무하고 계셨던 심재은 멘토분입니다.
+2020년도 대학교에서 수강한 산합혁력 프로젝트에서 진행된 프로젝트입니다. 멘토분은 Microsoft 본사에서 데이터사이언티스트로 근무하고 계셨던 심재은 멘토분입니다. 
 팀원은 김현명, 한도훈, 마위잉, 신희을, 김배승씨로 구성이 되었고 저는 그중 팀장의 역할을 맡아서 진행했습니다. 팀이름은 산학클라쓰입니다.
 AI, ML을 이용한 첫번째 프로젝트였고 그만큼 tensorflow 환경 설정이라던지
-데이터를 불러와서 전처리하고 사용하는것에서 새로운 경험을 하고 다소 해맸었습니다. 우선 프로젝트에 대해 설명하고 느낀점에서 더 서술하겠습니다.
+데이터를 불러와서 전처리하고 사용하는것에서 새로운 경험을 하고 다소 해맸었습니다. 
 
 
 ***
@@ -209,8 +209,9 @@ http://www.ndsl.kr/ndsl/commons/util/ndslOriginalView.do?dbt=JAKO&cn=JAKO2019137
 습니 최종 프로젝트의 사용자 만족도 평가를 위해 네이버폼을 이용해 인터뷰를 진행하였습니다. 유용성, 사용성, 개성 총 3가지 카테고리로 분류하여 조사를 진행하였고 각 질문 별로 1부터 5까지 만족도를 선택할 수 있도록 하였습니다. 
 
 ![image](https://user-images.githubusercontent.com/44837403/115152953-6ab60700-a0ae-11eb-9980-e67b1ec359e9.png)
-![image](https://user-images.githubusercontent.com/44837403/115152959-743f6f00-a0ae-11eb-842c-ff51431248e0.png)
 
+#### 사용성 평가 결과
+![image](https://user-images.githubusercontent.com/44837403/115153060-ec0d9980-a0ae-11eb-9b5a-e821b36cf754.png)
 
 
 
