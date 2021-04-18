@@ -234,41 +234,51 @@ https://lsjsj92.tistory.com/568?category=853217
 
 영화- 추천 시스템 모델1 (이분 블로그를 많이 참고했습니다. 추천시스템에 관해서 도움이 되는 글들이 많습니다.)
 
+
 https://towardsdatascience.com/getting-started-with-recommender-systems-and-tensorrec-8f50a9943eef?gi=b7a5d1d30681
 
 영화- 추천 시스템 모델2
+
 
 https://www.youtube.com/watch?v=MIBPJV8krXM&list=PLSlDi2AkDv83W0Js_cjxlIg-CGKNi4VUX&index=1
 
 머신러닝 
 
+
 http://hoondongkim.blogspot.com/2019/03/recommendation-trend.html
 
 추천시스템 흐름을 잘 확인할 수 있는 사이트
+
 
 http://swlock.blogspot.com/2018/12/python-pandas-dataframe-numpy-torch.html
 
 pandas dataframe을 numpy로 변환
 
+
 https://greeksharifa.github.io/pytorch/2018/11/02/pytorch-usage-01-introduction/
 
 pytorch 설치
+
 
 http://www.ndsl.kr/ndsl/commons/util/ndslOriginalView.do?dbt=JAKO&cn=JAKO201913747259432&oCn=JAKO201913747259432&pageCode=PG11&journal=NJOU00400536
 
 추천시스템 Textmining 향상 방안 연구
 
+
 https://docs.microsoft.com/en-us/azure/machine-learning/tutorial-1st-experiment-sdk-setup
 
 Azure SDK적용
+
 
 https://dowant.tistory.com/entry/TypeError-numpyndarray-object-is-not-callable
 
 numpy 사용에제
 
+
 https://boysboy3.tistory.com/94
 
 아나콘다 – tensorflow 설치
+
 
 http://pythonstudy.xyz/python/article/207-CSV-%ED%8C%8C%EC%9D%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0
 
