@@ -265,11 +265,6 @@ http://www.ndsl.kr/ndsl/commons/util/ndslOriginalView.do?dbt=JAKO&cn=JAKO2019137
 추천시스템 Textmining 향상 방안 연구
 
 
-https://docs.microsoft.com/en-us/azure/machine-learning/tutorial-1st-experiment-sdk-setup
-
-Azure SDK적용
-
-
 https://dowant.tistory.com/entry/TypeError-numpyndarray-object-is-not-callable
 
 numpy 사용에제
