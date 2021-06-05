@@ -26,64 +26,32 @@ AI, ML을 이용한 첫번째 프로젝트였고 그만큼 tensorflow 환경 설
 
 ### 프로젝트 개요
 
- 우리의 프로젝트 단계는 크게 데이터 추출 – 추천시스템 모델 개발 – Azure SDK 적용 – 추천시스템 개선(TextMing 적용) - 통계치 추출 및 분석, 사용성 평가의 단계로 이루어진다.
-그중 데이터 추출부분부터 알아보자.
+ 우리의 프로젝트 단계는 크게 데이터 추출 – 추천시스템 모델 개발 – 추천시스템 개선(TextMing 적용) - 통계치 추출 및 분석, 사용성 평가의 단계로 이루어진다.
+그중 데이터 추출부분부터 알아보겠습니다.
 
 #### -데이터 추출
-(마위잉씨가 주로 맡게된 역할이다.)
+(마위잉씨가 주로 맡게된 역할입니다.)
 ![image](https://user-images.githubusercontent.com/44837403/115152128-d1d1bc80-a0aa-11eb-858d-6159df836203.png)
 
 
 
-(1) iDataAPI(광저우간혁신정보과학기술유한공사)는 중국에서의 한 데이터 서비스 공급업체로 2014년 창립 이후 기업, 기구, 개인에게 전문적인 데이터 수집, 데이터 융합, 데이터 분석과 데이터 관리 등 서비스를 지속적으로 제공해왔다.
+iDataAPI(광저우간혁신정보과학기술유한공사)는 중국에서의 한 데이터 서비스 공급업체로 2014년 창립 이후 기업, 기구, 개인에게 전문적인 데이터 수집, 데이터 융합, 데이터 분석과 데이터 관리 등 서비스를 지속적으로 제공해왔습니다. 우리 산학클라쓰팀의 마위잉씨의 도움으로 위의 업체에서 배달 주문데이터에 대해서 수집하고 활용할 수 있었습니다.
 
-![image](https://user-images.githubusercontent.com/44837403/115152183-080f3c00-a0ab-11eb-9afe-7757fb1e60ea.png)
+ ![image](https://user-images.githubusercontent.com/44837403/120885843-fadfe980-c625-11eb-867e-6a8e50857d6c.png)
 
-
-
-(2)음식점에 관한 데이터를 추출하는것이 목적이기에 먼저 로그인하여 user center에 들어가서 my data API중 이미 구매한 Catering data interface을 선택하여 test한다.
-
-![image](https://user-images.githubusercontent.com/44837403/115152194-178e8500-a0ab-11eb-9bf5-808978ba8903.png)
-
-
-(3) test누르면 위의 사진처럼 화면이 나옵니다.이것이 데이터 추출할 때 필요되는  parameters를 써넣어야 하는 곳이다. 사진이 보여 주는대로 도시는 우한을 대상으로 정하였다.
-
-(4)parameters를 보면 주로 데이터 추출에 영향주는 것은 경도(lon),위도(lat), 거리(distance), app Code(이미 중국의 한 미식 평가를 하는 dianping을 정했음) 등 네가지 요소입니다.
-
-
-![image](https://user-images.githubusercontent.com/44837403/115152226-3a209e00-a0ab-11eb-9111-346075bf9e12.png)
-
-![image](https://user-images.githubusercontent.com/44837403/115152234-44429c80-a0ab-11eb-8c50-5f9f640fcc46.png)
-
-(5) 경위도를 정하여 그 위치를 중심으로 거리가 정한대로 주위의 음식점의 데이터를 추출하는 형식이다. 구역 대로 추출할것이기에 부동한 구역의 경위도를 지도에서 찾은 후 parameters의 해당한 위치에 써넣는다. 이외에 거리를 5km로 정하였다.
-
-![image](https://user-images.githubusercontent.com/44837403/115152240-4b69aa80-a0ab-11eb-9040-627a1d6281f5.png)
-
-
-(6) 모든 parameters를 정한 후 추출할 기간을 정하여 test를 시작하면 위의 사진처럼 데이터가 추출하게 된다,
-.
-![image](https://user-images.githubusercontent.com/44837403/115152251-53294f00-a0ab-11eb-815b-4ebcaec92b7e.png)
-
-(7) iDataAPI는 직접 격식을 csv로 전환할수 있으므로 직접 전환하여 저장하였다
-
-![image](https://user-images.githubusercontent.com/44837403/115152260-5d4b4d80-a0ab-11eb-8d7f-08fcab4e9986.png)
-
-(8) 만약 전환 기능을 제공하지 않는 프로그램을 사용하였다면 위의 code로 전환할 수 있다.
-
-![image](https://user-images.githubusercontent.com/44837403/115152366-c29f3e80-a0ab-11eb-9e4e-6f545db24aee.png)
-
-(9) 이외에 JSON파일을 CSV로 전환할수 잇는 website도 있다.
+ 산학클라쓰팀에서는 위의 우한지역 1 ~ 11번 지역 중 1 ~ 9번 지역에 대해서 모이는 배달 주문데이터를 활용하였습니다. 
 
  ![image](https://user-images.githubusercontent.com/44837403/115152371-c92db600-a0ab-11eb-93b8-d6f60b0eb816.png)
 
 
-이렇게 추출된 csv파일은 위와 같이 확인할 수 있다. 위에 보이는 데이터들은 우한지역의 1번부터 9번 지역에 해당하는 데이터들이다. 다만, 중국어로 되어있기 때문에 한글로 번역하는 과정을 추가로 거쳤다. 추천시스템 모델을 사용할 때엔 
+이렇게 추출된 csv파일은 위와 같이 확인할 수 있습니다. 위에 보이는 데이터들은 우한지역의 1번부터 9번 지역에 해당하는 데이터들입니다. 다만, 중국어로 되어있기 때문에 한글로 번역하는 과정을 추가로 거쳤습니다.
 
 ![image](https://user-images.githubusercontent.com/44837403/115152381-cf239700-a0ab-11eb-88a5-b8a962dbb7d0.png)
 
 
-위와 같이 데이터를 구조화하고 정리해서 사용했다.
-#### -추천시스템 모델 개발
+위와 같이 데이터를 구조화하고 정리해서 사용했습니다.
+
+### -추천시스템 모델 개발
 
  추천시스템 모델은 아나콘다 – Jupiter Notebook 환경에서 Python언어를 사용해서 구축되었다. 이는 심재은 멘토님의 조언과 더불어 여러 인터넷 사이트를 참고를 했다. 특히, 기존에 많이 open되어 있는 영화추천 시스템 모델을 참고를 많이 하게 되었다. 구축된 모델의 중점적인 기능을 위주로 설명을 하겠다. 
 
