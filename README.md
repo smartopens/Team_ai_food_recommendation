@@ -136,7 +136,7 @@ http://www.ndsl.kr/ndsl/commons/util/ndslOriginalView.do?dbt=JAKO&cn=JAKO2019137
 
 https://lsjsj92.tistory.com/568?category=853217
 
-영화- 추천 시스템 모델 (이분 블로그를 많이 참고했습니다. 추천시스템에 관해서 도움이 되는 글들이 많습니다.)
+영화- 추천 시스템 모델
 
 https://www.youtube.com/watch?v=MIBPJV8krXM&list=PLSlDi2AkDv83W0Js_cjxlIg-CGKNi4VUX&index=1
 
