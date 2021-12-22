@@ -102,7 +102,7 @@ http://www.ndsl.kr/ndsl/commons/util/ndslOriginalView.do?dbt=JAKO&cn=JAKO2019137
 
 ![image](https://user-images.githubusercontent.com/44837403/147021755-49253d1c-dbb4-4f9b-885c-abdcf98d968b.png)
 
-## 느낀점
+## 회고
 
  AI/ML에 대해서 배울 수 있는 좋은 프로젝트 였습니다. 멘토분, 지도교수님, 여러 팀원들의 도움으로 AI/ML모델을 만들었습니다.
  데이터들도 프로젝트 주제에 맞게 직접 수집, 전처리해서 모델에 적용하였습니다.
