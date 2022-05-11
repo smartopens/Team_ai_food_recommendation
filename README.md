@@ -1,4 +1,4 @@
-## TeamProject_AI_Food_Recommendation_Syste
+## TeamProject_AI_Food_Recommendation_System
 음식관련 자영업자 분들에게 지역별로 선호될 수 있는 음식메뉴 추천 시스템
 
 
