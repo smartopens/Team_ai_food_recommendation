@@ -1,27 +1,25 @@
-## TeamProject_AI_Food_Recommendation_System
-음식관련 자영업자 분들에게 지역별로 선호될 수 있는 음식메뉴 추천 시스템
+## AI_Food_Recommendation_System
+음식메뉴 추천 시스템
 
+### 프로젝트
 
-### 프로젝트 개요
-
-  코로나로 인해서 음식 자영업자 분들이 타격을 입게 되었고 그에 맞춰 음식 관련 배달앱 서비스가 부상했습니다.      
- 이에 음식 배달 Data를 기반으로 AI추천 시스템을 통해 음식 자영업자분들에게 도움이 되는 프로젝트를 만들고자 했습니다.              
- 최종적으로 음식 자영업자분들을을 위한 지역별 음식메뉴 Recommendation System을 구축했습니다.
+ 코로나로 인해서 음식 자영업자 분들이 타격을 입게 되었고 그에 맞춰 음식 관련 배달앱 서비스가 부상했습니다.      
+이에 음식 배달 Data를 기반으로 AI추천 시스템을 통해 음식 자영업자분들에게 도움이 되는 프로젝트를 만들고자 했습니다.              
+음식 자영업자분들을을 위한 지역별 음식메뉴 Recommendation System
 
 ### 진행 기간   
 2020-03-02 ~ 2020-06-20
 
-### 프로젝트 구성
+### Process
 
- 우리의 프로젝트 단계는 크게 데이터 추출 – 추천시스템 모델 개발 – 추천시스템 개선(TextMing 적용) - 통계치 추출 및 분석, 사용성 평가
-
-### Specification
+프로젝트 단계: 데이터 추출 – 추천시스템 모델 개발 – 추천시스템 개선(TextMing 적용) - 통계치 추출 및 분석, 사용성 평가
 
 - 데이터 추출
 
-![image](https://user-images.githubusercontent.com/44837403/147019056-111eb20a-2728-4f8c-a2ad-d4abf5c43a5b.png)
+![image](https://user-images.githubusercontent.com/44837403/181686424-e5fd2e36-0ff0-4894-ad4f-e85d7b24fdd4.png)
 
-iDataAPI(광저우간혁신정보과학기술유한공사)는 중국에서의 한 데이터 서비스 공급업체로 2014년 창립 이후 기업, 기구, 개인에게 전문적인 데이터 수집, 데이터 융합, 데이터 분석과 데이터 관리 등 서비스를 지속적으로 제공해왔습니다. 같은 팀원인 마위잉씨의 도움으로 위의 업체에서 배달 주문데이터를 수집하고 활용했습니다.
+iDataAPI(광저우간혁신정보과학기술유한공사)는 중국의 한 데이터 서비스 공급업체  
+팀원의 도움으로 이곳에서 배달 주문데이터를 수집하고 활용
 
 ![image](https://user-images.githubusercontent.com/44837403/147019078-37f0921a-ecfc-4e2d-bc0b-cd0a34c3c98d.png)
 
@@ -29,11 +27,11 @@ iDataAPI(광저우간혁신정보과학기술유한공사)는 중국에서의 �
 
 - anaconda – Jupiter Notebook 환경에서 Python, tensorflow기반의 추천시스템 모델
  
-- 시스템 순서도
 
-![image](https://user-images.githubusercontent.com/44837403/147019325-7b0c464b-b67b-4e45-b745-7d6f5902ad88.png)
+- 시스템 순서도  
 
-추천시스템은 위와 같은 Flow를 가지게 됩니다.
+![image](https://user-images.githubusercontent.com/44837403/181686699-950bc79c-be52-450f-9de4-06fe087012bc.png)
+
 
 - 결측치 처리        
 ![image](https://user-images.githubusercontent.com/44837403/147019561-e03f490f-2a30-46c5-9a2e-660fd77606d6.png)
