@@ -12,7 +12,9 @@
 
 ### Process
 
-프로젝트 단계: 데이터 추출 – 추천시스템 모델 개발 – 추천시스템 개선(TextMing 적용) - 통계치 추출 및 분석, 사용성 평가
+프로젝트 단계  
+데이터 추출 및 전처리 –> 추천시스템 모델 구축 및 학습 –> 추천시스템 Predict ->  
+추천시스템 개선(Implict factor use 적용, 논문 참고) -> 통계치 추출 및 분석, 사용성 평가  
 
 - 데이터 추출
 
@@ -33,15 +35,7 @@ iDataAPI(광저우간혁신정보과학기술유한공사)는 중국의 한 데�
 ![image](https://user-images.githubusercontent.com/44837403/181686699-950bc79c-be52-450f-9de4-06fe087012bc.png)
 
 
-- 결측치 처리        
-![image](https://user-images.githubusercontent.com/44837403/147019561-e03f490f-2a30-46c5-9a2e-660fd77606d6.png)
-
-
-
-결측치 처리를 해주는 부분입니다. 위에서 보면 기존의 평점들에 0점이 매겨진 경우가 있습니다. 이 경우는 기존 사용자들이 전 영역의 메뉴를 평가하지 않기 때문에 발생합니다. 이를 그대로 사용하면 모델이 평점을 가지는 데이터(약3.5의 평점)에 Over Fitting되는 문제들이 발생될 수 있기 때문에 각 평점들에 평균 평점을 빼주는 작업을 진행하였습니다.
-
-
-- 알고리즘
+- Matrix Factorization(by SVD)
 
 평점들이 매겨진 데이터들을 Matrix Factorization을 적용하였습니다.
 
@@ -69,18 +63,20 @@ iDataAPI(광저우간혁신정보과학기술유한공사)는 중국의 한 데�
 
 ### Advance Recommendation System
 
-- Text Mining에 기초한 가중치 부여
+- Implict factor를 활용한 가중치 부여
 
  기존의 추천시스템 모델을 더욱 더 개선하고자 노력하였습니다. 그래서 모아지는 데이터 중 리뷰 데이터를 이용해서 TextMining을 이용한 가중치 부여를 하기로 하였습니다.
 가중치로 사용된 데이터는 goodtag(좋은 평가)와 ratingCount(별점 수)입니다.
 
 ![image](https://user-images.githubusercontent.com/44837403/147021571-a1ac69a8-68f5-4a6f-8ba2-3f8a8c87cc69.png)
 
-![image](https://user-images.githubusercontent.com/44837403/147021580-7d33a5fa-0283-41e5-a6b4-d042ee8b3a82.png)
+![image](https://user-images.githubusercontent.com/44837403/183652601-1688a04a-c8c9-4971-a31e-01f5d61cb1b3.png)
 
- 위는 ‘평점과 리뷰 텍스트 감성분석을 결합한 추천시스템 향상 방안 연구’ 입니다. 이는 영화 추천시스템에서 사용자들의 리뷰가 가지는 긍정적인 감성수치와 부정적인 감성수치를 바탕으로 가중치를 MF기법에 더해주는 방안에 대해서 연구한 논문입니다. 논문에서는 줄어든 MAE를 근거로 TextMining의 효과에 입증을 더해주었습니다. 이 방식을 참고해 가중치를 더해주었습니다.
+ ‘평점과 리뷰 텍스트 감성분석을 결합한 추천시스템 향상 방안 연구’에서의 결과 입증 부분입니다.  
+이논문은 영화 추천시스템에서 사용자들의 리뷰가 가지는 긍정적인 감성수치와 부정적인 감성수치를 바탕으로 가중치를 MF기법에 더해주는 방안에 대해서 연구했습니다.  
+리뷰 적용 후 줄어든 MAE를 근거로 Implict factor use의 효과를 입증했습니다. 이 방식을 참고해 모델을 개선했습니다.   
 
-참고 문헌
+Reference
 http://www.ndsl.kr/ndsl/commons/util/ndslOriginalView.do?dbt=JAKO&cn=JAKO201913747259432&oCn=JAKO201913747259432&pageCode=PG11&journal=NJOU00400536
 
 
