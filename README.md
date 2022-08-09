@@ -76,7 +76,7 @@ iDataAPI(광저우간혁신정보과학기술유한공사)는 중국의 한 데�
 이런 내적요인을 활용한 가중치를 MF기법에 더해주는 방안과 효과에 대해서 확인할 수 있습니다.     
 리뷰 적용 후 줄어든 MAE를 근거로 Implict factor use의 효과를 입증했습니다. 이 방식을 참고해 모델을 개선했습니다.   
 
-Reference
+#### Reference  
 http://www.ndsl.kr/ndsl/commons/util/ndslOriginalView.do?dbt=JAKO&cn=JAKO201913747259432&oCn=JAKO201913747259432&pageCode=PG11&journal=NJOU00400536
 
 
